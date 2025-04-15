@@ -14,11 +14,6 @@ final class CatInteractorTests: XCTestCase {
     var mockService: MockNetworkService!
     var cancellables: Set<AnyCancellable> = []
     
-    override func setUpWithError() throws {
-        try super.setUpWithError()
-        
-    }
-
     override func setUp() {
         super.setUp()
         mockService = MockNetworkService()
